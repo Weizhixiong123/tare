@@ -82,6 +82,10 @@ function IsolatedIframeAd({ config, lazy = false }: { config: IframeAdConfig; la
         width={config.width}
         height={config.height}
         loading={lazy ? "lazy" : "eager"}
+        // Without `allow-same-origin` the srcdoc frame gets an opaque origin, so the
+        // third-party ad script cannot reach window.parent, cookies or storage.
+        sandbox="allow-scripts allow-popups allow-popups-to-escape-sandbox"
+        referrerPolicy="strict-origin-when-cross-origin"
         scrolling="no"
         className="max-w-full border-0 bg-transparent"
         style={{ width: config.width, height: config.height }}

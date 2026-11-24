@@ -3,6 +3,8 @@ import { SEEKER_CLASSES } from "@/data/taraeData";
 import { getTranslations } from "@/data/translations";
 import { pageMetadata } from "../../../metadata";
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return SEEKER_CLASSES.map(({ id }) => ({ id }));
 }

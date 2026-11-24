@@ -22,7 +22,7 @@ export default function LocaleShell({
     "@graph": [
       {
         "@type": "WebSite",
-        "@id": `${siteUrl}/#website`,
+        "@id": `${siteUrl.replace(/\/$/, "")}/#website`,
         url: siteUrl,
         name: t.siteName,
         description: t.home.metaDescription,
