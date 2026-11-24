@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { MidRectangleAd, ResponsiveTopBannerAd } from "@/components/AdSlots";
 import { CornerOrnaments } from "@/components/EasternOrnaments";
 import GuideHeader from "@/components/GuideHeader";
 import { type Locale, localePath } from "@/data/locales";
@@ -16,6 +17,8 @@ export default function SystemRequirementsView({ locale }: { locale: Locale }) {
           {t.specs.checkedLabel} <time dateTime={SITE_CONFIG.sourceCheckDate}>{t.sourceDateFormatted}</time>
         </p>
       </GuideHeader>
+
+      <ResponsiveTopBannerAd className="mt-6" />
 
       <section className="mt-7 grid gap-4 sm:grid-cols-2" aria-label={t.specs.metaTitle}>
         <div className="arpg-card rounded-xl p-5">
@@ -43,6 +46,8 @@ export default function SystemRequirementsView({ locale }: { locale: Locale }) {
           </dl>
         </div>
       </section>
+
+      <MidRectangleAd className="mt-8" />
 
       <section className="arpg-card mt-8 rounded-2xl p-6">
         <CornerOrnaments />

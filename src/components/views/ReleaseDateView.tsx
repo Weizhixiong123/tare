@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { MidRectangleAd, ResponsiveTopBannerAd } from "@/components/AdSlots";
 import { CornerOrnaments } from "@/components/EasternOrnaments";
 import GuideHeader from "@/components/GuideHeader";
 import YouTubeFacade from "@/components/YouTubeFacade";
@@ -38,6 +39,8 @@ export default function ReleaseDateView({ locale }: { locale: Locale }) {
           {t.release.sourcesChecked} <time dateTime={SITE_CONFIG.sourceCheckDate}>{t.sourceDateFormatted}</time>
         </p>
       </GuideHeader>
+
+      <ResponsiveTopBannerAd className="mt-6" />
 
       <section className="mt-8 grid gap-4 sm:grid-cols-3">
         <div className="arpg-card rounded-xl p-5">
@@ -91,6 +94,8 @@ export default function ReleaseDateView({ locale }: { locale: Locale }) {
           </li>
         </ol>
       </section>
+
+      <MidRectangleAd className="mt-8" />
 
       <section className="mt-8 grid gap-4 sm:grid-cols-2">
         <div className="arpg-card rounded-xl p-5">

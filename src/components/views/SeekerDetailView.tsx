@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowRight, ExternalLink } from "lucide-react";
+import { MidRectangleAd, ResponsiveTopBannerAd } from "@/components/AdSlots";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { CornerOrnaments, SeekerWeaponCrest } from "@/components/EasternOrnaments";
 import { type Locale, localePath } from "@/data/locales";
@@ -44,6 +45,8 @@ export default function SeekerDetailView({ locale, id }: { locale: Locale; id: s
         </div>
         <p className="mt-5 max-w-3xl text-base leading-relaxed text-gray-200">{seeker.overview}</p>
       </header>
+
+      <ResponsiveTopBannerAd className="mt-6" />
 
       <div className="mt-7 grid gap-6 md:grid-cols-2">
         <section className="arpg-card rounded-2xl p-6">
@@ -102,6 +105,8 @@ export default function SeekerDetailView({ locale, id }: { locale: Locale; id: s
           </a>
         </div>
       </section>
+
+      <MidRectangleAd className="mt-8" />
 
       <section className="mt-10" aria-labelledby="other-seekers">
         <h2 id="other-seekers" className="font-serif text-xl font-bold text-amber-200">

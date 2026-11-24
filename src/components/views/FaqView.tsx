@@ -1,3 +1,4 @@
+import { ResponsiveTopBannerAd } from "@/components/AdSlots";
 import FaqInteractive from "@/components/FaqInteractive";
 import GuideHeader from "@/components/GuideHeader";
 import type { Locale } from "@/data/locales";
@@ -33,6 +34,8 @@ export default function FaqView({ locale }: { locale: Locale }) {
           .
         </p>
       </GuideHeader>
+      <ResponsiveTopBannerAd className="mt-6" />
+
       <section className="mt-7" aria-label={t.faq.searchLabel}>
         <FaqInteractive
           items={t.faqs}

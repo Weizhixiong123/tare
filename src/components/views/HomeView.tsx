@@ -1,6 +1,7 @@
 import { ArrowRight, ExternalLink } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { MidRectangleAd, ResponsiveTopBannerAd } from "@/components/AdSlots";
 import { CornerOrnaments, SeekerWeaponCrest } from "@/components/EasternOrnaments";
 import YouTubeFacade from "@/components/YouTubeFacade";
 import { type Locale, localePath } from "@/data/locales";
@@ -128,6 +129,7 @@ export default function HomeView({ locale }: { locale: Locale }) {
         </section>
 
         <section id="classes-overview" aria-labelledby="seekers">
+          <ResponsiveTopBannerAd className="mb-10" />
           <div className="flex flex-wrap items-baseline justify-between gap-2">
             <h2 id="seekers" className="font-serif text-2xl font-bold text-amber-200">
               {t.home.seekersTitle}
@@ -163,6 +165,7 @@ export default function HomeView({ locale }: { locale: Locale }) {
         </section>
 
         <section aria-labelledby="official-videos">
+          <MidRectangleAd className="mb-10" />
           <div className="flex flex-wrap items-baseline justify-between gap-2">
             <h2 id="official-videos" className="font-serif text-2xl font-bold text-amber-200">
               {t.home.videosTitle}

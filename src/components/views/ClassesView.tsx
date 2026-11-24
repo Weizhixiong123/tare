@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ArrowRight, ExternalLink } from "lucide-react";
+import { MidRectangleAd, ResponsiveTopBannerAd } from "@/components/AdSlots";
 import { CornerOrnaments, SeekerWeaponCrest } from "@/components/EasternOrnaments";
 import GuideHeader from "@/components/GuideHeader";
 import YouTubeFacade from "@/components/YouTubeFacade";
@@ -40,6 +41,8 @@ export default function ClassesView({ locale }: { locale: Locale }) {
         </ul>
       </nav>
 
+      <ResponsiveTopBannerAd className="mt-6" />
+
       <section className="mt-8" aria-labelledby="classes-comparison">
         <h2 id="classes-comparison" className="font-serif text-2xl font-bold text-amber-200">
           {t.classes.comparisonTitle}
@@ -76,6 +79,8 @@ export default function ClassesView({ locale }: { locale: Locale }) {
           </table>
         </div>
       </section>
+
+      <MidRectangleAd className="mt-8" />
 
       <div className="mt-8 grid gap-5 md:grid-cols-2">
         {t.seekers.map(({ id, name, originalName, role, weapons, demoStatus, overview, combatFocus }) => (

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ArrowRight, ExternalLink } from "lucide-react";
+import { MidRectangleAd, ResponsiveTopBannerAd } from "@/components/AdSlots";
 import { CornerOrnaments } from "@/components/EasternOrnaments";
 import GuideHeader from "@/components/GuideHeader";
 import { type Locale, localePath } from "@/data/locales";
@@ -26,6 +27,8 @@ export default function WorldView({ locale }: { locale: Locale }) {
         </p>
       </GuideHeader>
 
+      <ResponsiveTopBannerAd className="mt-6" />
+
       <div className="mt-8 grid gap-6 md:grid-cols-2">
         {t.worldSystems.map((pillar) => (
           <section key={pillar.id} id={pillar.id} className="arpg-card rounded-2xl p-6">
@@ -36,6 +39,8 @@ export default function WorldView({ locale }: { locale: Locale }) {
           </section>
         ))}
       </div>
+
+      <MidRectangleAd className="mt-8" />
 
       <section className="arpg-card mt-8 rounded-2xl p-6">
         <CornerOrnaments />

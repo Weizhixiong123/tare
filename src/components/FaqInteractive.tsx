@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { Search } from "lucide-react";
+import { MidRectangleAd } from "@/components/AdSlots";
 import { CornerOrnaments } from "@/components/EasternOrnaments";
 import type { LocalizedFaqItem } from "@/data/translations/types";
 
@@ -85,13 +86,16 @@ export default function FaqInteractive({
 
       {/* FAQ Cards */}
       <div className="mt-6 space-y-4">
-        {filtered.map((item) => (
-          <div key={item.question} className="arpg-card rounded-2xl p-6">
-            <CornerOrnaments />
-            <span className="text-xs font-semibold text-amber-300">{item.categoryLabel}</span>
-            <h2 className="mt-3 font-serif text-lg font-bold text-white">{item.question}</h2>
-            <p className="mt-2 text-sm leading-relaxed text-gray-200">{item.answer}</p>
-          </div>
+        {filtered.map((item, idx) => (
+          <React.Fragment key={item.question}>
+            <div className="arpg-card rounded-2xl p-6">
+              <CornerOrnaments />
+              <span className="text-xs font-semibold text-amber-300">{item.categoryLabel}</span>
+              <h2 className="mt-3 font-serif text-lg font-bold text-white">{item.question}</h2>
+              <p className="mt-2 text-sm leading-relaxed text-gray-200">{item.answer}</p>
+            </div>
+            {idx === 2 && filtered.length >= 4 && <MidRectangleAd className="my-6" />}
+          </React.Fragment>
         ))}
 
         {filtered.length === 0 && (

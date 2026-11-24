@@ -1,4 +1,5 @@
 import React from "react";
+import { NativeFooterAd } from "@/components/AdSlots";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { LOCALE_META, type Locale } from "@/data/locales";
@@ -57,6 +58,7 @@ export default function LocaleShell({
         <Navbar locale={locale} />
         <main id="main-content" className="relative flex-1 bg-taegwido-realm">
           {children}
+          <NativeFooterAd />
         </main>
         <Footer locale={locale} />
       </body>
