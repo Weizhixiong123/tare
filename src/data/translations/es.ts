@@ -11,6 +11,7 @@ export const es: SiteTranslations = {
     { href: "/classes", label: "Clases", description: "Conoce a los seis Buscadores jugables." },
     { href: "/world", label: "Mundo y Sistemas", description: "Taegwido, Seis Reinos, Cinco Elementos, Yin-Yang y karma." },
     { href: "/platforms", label: "Plataformas", description: "Tiendas oficiales, consola y cooperativo en línea." },
+    { href: "/multiplayer", label: "Multijugador", description: "Cooperativo en línea, crossplay, modo sin conexión y PvP." },
     { href: "/system-requirements", label: "Requisitos PC", description: "Estado oficial de requisitos en Steam." },
     { href: "/faq", label: "FAQ", description: "Preguntas frecuentes sobre el juego, combate y lore." },
   ],
@@ -56,7 +57,7 @@ export const es: SiteTranslations = {
   },
   classes: {
     breadcrumb: "Clases",
-    metaTitle: "Clases de TARAE y los Seis Buscadores",
+    metaTitle: "Clases y personajes de TARAE: los seis Buscadores",
     metaDescription:
       "Descubre a Warfiend, Samurai, Tiger Hunter, Geomancer, Kunoichi y Manshin, las seis clases jugables de TARAE: The Unbound.",
     headerLead:
@@ -116,7 +117,7 @@ export const es: SiteTranslations = {
   },
   release: {
     breadcrumb: "Lanzamiento",
-    metaTitle: "Fecha de Lanzamiento de TARAE, Beta, Demo y Precio",
+    metaTitle: "Fecha de lanzamiento de TARAE, acceso anticipado, beta, demo y precio",
     metaDescription:
       "El tráiler de KRAFTON apunta a 2027 para TARAE: The Unbound. Consulta el estado en tiendas, pruebas en eventos, beta y precio.",
     statusLeadPrefix: "Fecha de lanzamiento:",
@@ -154,7 +155,7 @@ export const es: SiteTranslations = {
   },
   platforms: {
     breadcrumb: "Plataformas",
-    metaTitle: "Plataformas de TARAE: Steam, PS5, Xbox, Switch y Crossplay",
+    metaTitle: "Plataformas y fecha de lanzamiento de TARAE: PS5, Xbox, PC y Switch 2",
     metaDescription:
       "Plataformas confirmadas de TARAE: The Unbound (PC Steam, PS5, Xbox Series X|S) y estado oficial de Switch 2, PS4, móviles, cooperativo y crossplay.",
     headerLead:
@@ -187,9 +188,73 @@ export const es: SiteTranslations = {
     offlineBody: "Sin confirmar. Admite un jugador, pero no se ha aclarado si requiere conexión permanente.",
     pvpTitle: "PvP y Límite de Jugadores:",
     pvpBody: "Sin confirmar. No hay mención de modos PvP ni tamaño máximo de grupo.",
+    linkMultiplayer: "Guía completa de multijugador",
     linkRelease: "Ver fecha de lanzamiento",
     linkSpecs: "Ver requisitos de PC",
     linkWorld: "Explorar sistemas de Taegwido",
+  },
+  multiplayer: {
+    breadcrumb: "Multijugador",
+    metaTitle: "¿TARAE es multijugador? Cooperativo, crossplay, offline y PvP",
+    metaDescription:
+      "¿TARAE: The Unbound tiene multijugador? Steam confirma cooperativo en línea y modo un jugador. Estado del crossplay, guardado cruzado, cooperativo local, modo sin conexión, PvP y tamaño del grupo.",
+    headerLead:
+      "Sí: TARAE: The Unbound admite cooperativo en línea. Steam indica Un jugador y Cooperativo en línea; el resto de detalles multijugador se recogen abajo como confirmados o pendientes.",
+    checkedLabel: "Fichas de tienda revisadas",
+    summaryTitle: "Funciones multijugador de un vistazo",
+    statusLabels: { yes: "Sí", no: "No", unconfirmed: "Sin confirmar" },
+    items: [
+      {
+        question: "¿TARAE: The Unbound es multijugador?",
+        status: "yes",
+        answer: "Sí. La ficha oficial de Steam incluye la etiqueta Cooperativo en línea, así que podrás jugar con otras personas por internet. Steam también indica Un jugador.",
+      },
+      {
+        question: "¿Se puede jugar en solitario?",
+        status: "yes",
+        answer: "Sí. Steam indica Un jugador junto a Cooperativo en línea, y los sistemas de builds se presentan pensados tanto para jugar solo como en cooperativo.",
+      },
+      {
+        question: "¿Tendrá crossplay entre PC, PS5 y Xbox?",
+        status: "unconfirmed",
+        answer: "Sin confirmar. Boundary y KRAFTON no han anunciado juego cruzado entre PC, PlayStation 5 y Xbox Series X|S.",
+      },
+      {
+        question: "¿Hay guardado cruzado o progreso compartido?",
+        status: "unconfirmed",
+        answer: "Sin confirmar. No se ha anunciado guardado cruzado ni progreso compartido entre plataformas.",
+      },
+      {
+        question: "¿Tiene cooperativo local o pantalla dividida?",
+        status: "unconfirmed",
+        answer: "Sin confirmar. Steam solo indica Un jugador y Cooperativo en línea; no aparece cooperativo local ni pantalla dividida.",
+      },
+      {
+        question: "¿Se puede jugar sin conexión?",
+        status: "unconfirmed",
+        answer: "Sin confirmar. Admite un jugador, pero las tiendas no aclaran si hará falta conexión permanente a internet.",
+      },
+      {
+        question: "¿Tiene PvP?",
+        status: "unconfirmed",
+        answer: "Sin confirmar. Ni Steam ni KRAFTON mencionan modos PvP.",
+      },
+      {
+        question: "¿Cuántos jugadores pueden jugar en cooperativo?",
+        status: "unconfirmed",
+        answer: "Sin confirmar. El tamaño máximo del grupo cooperativo no se ha publicado.",
+      },
+      {
+        question: "¿Es un MMO?",
+        status: "no",
+        answer: "No. TARAE: The Unbound es un RPG de acción con vista cenital para un jugador y cooperativo en línea, no un MMORPG de mundo persistente.",
+      },
+    ],
+    relatedTitle: "Guías relacionadas",
+    linkPlatforms: "Plataformas y lanzamiento",
+    linkRelease: "Fecha de lanzamiento",
+    linkClasses: "Conoce a los seis Buscadores",
+    linkFaq: "Todas las preguntas",
   },
   specs: {
     breadcrumb: "Requisitos PC",
@@ -437,6 +502,18 @@ export const es: SiteTranslations = {
       categoryLabel: "General y Lanzamiento",
       question: "¿Qué motor gráfico utiliza TARAE?",
       answer: "Boundary y KRAFTON no han confirmado oficialmente el motor gráfico en las fichas de Steam o PlayStation.",
+    },
+    {
+      categoryKey: "general",
+      categoryLabel: "General y Lanzamiento",
+      question: "¿Tendrá acceso anticipado, beta o playtest?",
+      answer: "Aún no se ha anunciado. En nuestra última revisión, Steam no mostraba fechas de acceso anticipado, beta abierta ni inscripción a Steam Playtest. Las versiones jugables de 2026 solo estuvieron disponibles en Gamescom y G-STAR.",
+    },
+    {
+      categoryKey: "general",
+      categoryLabel: "General y Lanzamiento",
+      question: "¿Quién desarrolla TARAE? ¿Es un juego coreano?",
+      answer: "TARAE: The Unbound está desarrollado por Boundary y publicado por KRAFTON, Inc., la compañía surcoreana detrás de PUBG: Battlegrounds. El juego se inspira en la historia y el folclore de Corea, desde los cazadores de tigres de la era Joseon hasta el chamanismo, y se mostró en G-STAR 2026 en Busan.",
     },
     {
       categoryKey: "gameplay",

@@ -18,7 +18,7 @@ export const en: SiteTranslations = {
   },
   breadcrumbsHome: "Home",
   home: {
-    metaTitle: SITE_CONFIG.officialTitle,
+    metaTitle: "TARAE: The Unbound Game – Release Date, Classes & Platforms",
     metaDescription:
       "An independent wiki for TARAE: The Unbound. Explore the six playable classes, Taegwido lore, release details, platforms, PC requirements and official trailers.",
     heroLead: "A top-down action RPG set on Taegwido, an island born from the shattered Six Realms.",
@@ -50,7 +50,7 @@ export const en: SiteTranslations = {
   },
   classes: {
     breadcrumb: "Classes",
-    metaTitle: "TARAE Classes and the Six Seekers",
+    metaTitle: "TARAE Classes & Characters: All 6 Seekers",
     metaDescription:
       "Meet Warfiend, Samurai, Tiger Hunter, Geomancer, Kunoichi and Manshin, the six playable classes in TARAE: The Unbound.",
     headerLead:
@@ -111,7 +111,7 @@ export const en: SiteTranslations = {
   },
   release: {
     breadcrumb: "Release Date",
-    metaTitle: "TARAE Release Date, Beta Playtest, Demo & Price Status",
+    metaTitle: "TARAE Release Date, Early Access, Beta, Demo & Price",
     metaDescription:
       "KRAFTON’s trailer lists 2027 for TARAE: The Unbound. Check release date timing, beta/playtest/Early Access status, hands-on demos and free-to-play vs. price details.",
     statusLeadPrefix: "Release date:",
@@ -149,21 +149,21 @@ export const en: SiteTranslations = {
   },
   platforms: {
     breadcrumb: "Platforms",
-    metaTitle: "TARAE Platforms: Steam, PS5, Xbox, Switch & Crossplay Status",
+    metaTitle: "TARAE Platforms & Release Date: PS5, Xbox, PC & Switch 2 Status",
     metaDescription:
-      "Confirmed TARAE: The Unbound platforms (PC Steam, PS5, Xbox Series X|S) plus official status for Switch 2, PS4, mobile, online co-op, crossplay, couch co-op, and offline play.",
+      "TARAE: The Unbound is coming to PC (Steam), PS5 and Xbox Series X|S, with a 2027 release window in KRAFTON's trailer. Release date status per platform, plus Switch 2, PS4, mobile and co-op details.",
     headerLead:
       "KRAFTON announced TARAE: The Unbound for PC, PlayStation 5 and Xbox Series X|S. Specific launch dates, cross-platform play, and additional console ports remain pending.",
     checkedLabel: "Store listings checked",
-    pcTitle: "PC (Steam)",
+    pcTitle: "PC (Steam) Release Date",
     pcBody:
-      "Steam has an official store listing (App ID 4604540) with single-player and online co-op tags. An Epic Games Store listing remains unverified.",
+      "2027 window, exact date TBA. Steam has an official store listing (App ID 4604540) with single-player and online co-op tags. An Epic Games Store listing remains unverified.",
     pcLink: "Wishlist on Steam",
-    psTitle: "PlayStation 5",
-    psBody: "The PlayStation Store has an official concept listing (ID 10020644) with a wishlist option and Eastern dark fantasy overview.",
+    psTitle: "PS5 Release Date",
+    psBody: "2027 window, exact date TBA. The PlayStation Store has an official concept listing (ID 10020644) with a wishlist option and Eastern dark fantasy overview.",
     psLink: "Open PlayStation Store",
-    xboxTitle: "Xbox Series X|S",
-    xboxBody: "KRAFTON lists Xbox Series X|S alongside PC and PlayStation 5 in the official reveal trailer description.",
+    xboxTitle: "Xbox Series X|S Release Date",
+    xboxBody: "2027 window, exact date TBA. KRAFTON lists Xbox Series X|S alongside PC and PlayStation 5 in the official reveal trailer description.",
     xboxLink: "View the official trailer",
     unconfirmedTitle: "Switch, Switch 2, PS4 & Mobile Status",
     unconfirmedLead:
@@ -185,9 +185,79 @@ export const en: SiteTranslations = {
     offlineBody: "Unconfirmed. Single-player is supported, but whether an always-online connection is required has not been stated.",
     pvpTitle: "PvP & Party Size Limit:",
     pvpBody: "Unconfirmed. No PvP modes or exact co-op player count limit are listed on Steam yet.",
+    linkMultiplayer: "Full multiplayer & co-op guide",
     linkRelease: "Check the release date",
     linkSpecs: "Check PC requirements",
     linkWorld: "Explore Taegwido & build systems",
+  },
+  multiplayer: {
+    breadcrumb: "Multiplayer",
+    metaTitle: "Is TARAE Multiplayer? Co-op, Crossplay, Offline & PvP",
+    metaDescription:
+      "Does TARAE: The Unbound have multiplayer? Steam confirms online co-op and single-player. Status of crossplay, cross-save, couch co-op, offline play, PvP and party size.",
+    headerLead:
+      "Yes — TARAE: The Unbound supports online co-op. Steam lists Single-player and Online Co-op; every other multiplayer detail is tracked below as confirmed or still unannounced.",
+    checkedLabel: "Store listings checked",
+    summaryTitle: "Multiplayer Features at a Glance",
+    statusLabels: { yes: "Yes", no: "No", unconfirmed: "Unconfirmed" },
+    items: [
+      {
+        question: "Is TARAE: The Unbound multiplayer?",
+        status: "yes",
+        answer:
+          "Yes. The official Steam listing tags TARAE: The Unbound with Online Co-op, so you can team up with other players online. Steam also lists Single-player.",
+      },
+      {
+        question: "Can you play TARAE solo (single-player)?",
+        status: "yes",
+        answer:
+          "Yes. Single-player is listed on Steam alongside Online Co-op, and the build systems are presented as working for both solo play and co-op.",
+      },
+      {
+        question: "Does TARAE have crossplay between PC, PS5 and Xbox?",
+        status: "unconfirmed",
+        answer:
+          "Unconfirmed. Boundary and KRAFTON have not announced crossplay across PC, PlayStation 5 and Xbox Series X|S.",
+      },
+      {
+        question: "Is there cross-save or cross-progression?",
+        status: "unconfirmed",
+        answer: "Unconfirmed. No cross-save or shared progression between platforms has been announced.",
+      },
+      {
+        question: "Does TARAE have couch co-op or split-screen?",
+        status: "unconfirmed",
+        answer:
+          "Unconfirmed. Steam only lists Single-player and Online Co-op; local couch co-op, split-screen and shared-screen play are not listed.",
+      },
+      {
+        question: "Can you play TARAE offline?",
+        status: "unconfirmed",
+        answer:
+          "Unconfirmed. Single-player is supported, but the store pages do not say whether an always-online connection is required.",
+      },
+      {
+        question: "Does TARAE have PvP?",
+        status: "unconfirmed",
+        answer: "Unconfirmed. No PvP modes are listed on Steam or announced by KRAFTON.",
+      },
+      {
+        question: "How many players can play co-op together?",
+        status: "unconfirmed",
+        answer: "Unconfirmed. The maximum co-op party size has not been published.",
+      },
+      {
+        question: "Is TARAE an MMO?",
+        status: "no",
+        answer:
+          "No. TARAE: The Unbound is a top-down action RPG with single-player and online co-op, not a persistent-world MMORPG.",
+      },
+    ],
+    relatedTitle: "Related Guides",
+    linkPlatforms: "Platforms & release status",
+    linkRelease: "Release date tracker",
+    linkClasses: "Meet the six Seekers",
+    linkFaq: "All FAQs",
   },
   specs: {
     breadcrumb: "PC Requirements",

@@ -22,7 +22,8 @@ export const SITE_NAV = [
   { href: "/release-date", label: "Release Date", description: "Release timing, pricing and hands-on demos." },
   { href: "/classes", label: "Classes", description: "Meet the six playable Seekers." },
   { href: "/world", label: "World & Systems", description: "Taegwido, Six Realms, Five Elements, Yin-Yang and Karma." },
-  { href: "/platforms", label: "Platforms", description: "Store listings and online co-op details." },
+  { href: "/platforms", label: "Platforms", description: "Store listings and release status for PC, PS5 and Xbox." },
+  { href: "/multiplayer", label: "Multiplayer", description: "Online co-op, crossplay, offline play and PvP status." },
   { href: "/system-requirements", label: "PC Requirements", description: "What Steam lists for minimum and recommended specs." },
   { href: "/faq", label: "FAQ", description: "Quick answers on the game, combat and Taegwido." },
 ] as const;
@@ -39,6 +40,7 @@ export interface SeekerClass {
   overview: string;
   combatFocus: readonly string[];
   playstyleNote: string;
+  seoKeyword?: string;
 }
 
 export const SEEKER_CLASSES: readonly SeekerClass[] = [
@@ -126,6 +128,7 @@ export const SEEKER_CLASSES: readonly SeekerClass[] = [
     id: "kunoichi",
     name: "Kunoichi",
     originalName: "쿠노이치",
+    seoKeyword: "Ninja",
     role: "Mobile assassin (ninja / shinobi)",
     range: "Close-range assassin",
     weapons: "Light blades and shinobi tools",
@@ -244,6 +247,18 @@ export const FAQ_ITEMS: FaqItem[] = [
       "Boundary and KRAFTON have not officially confirmed the game engine on the Steam or PlayStation Store listings.",
   },
   {
+    category: "General & Release",
+    question: "Will TARAE have Early Access, a beta or a playtest?",
+    answer:
+      "Not announced yet. When we last checked, Steam listed no Early Access schedule, open beta or Steam Playtest sign-up. The 2026 hands-on builds were playable only on site at Gamescom and G-STAR.",
+  },
+  {
+    category: "General & Release",
+    question: "Who is developing TARAE? Is it a Korean game?",
+    answer:
+      "TARAE: The Unbound is developed by Boundary and published by KRAFTON, Inc., the South Korean company behind PUBG: Battlegrounds. The game draws heavily on Korean history and folklore, from Joseon-era tiger hunters to Manshin shamanism, and was shown at G-STAR 2026 in Busan.",
+  },
+  {
     category: "Gameplay & Classes",
     question: "How many playable classes are in TARAE?",
     answer:
@@ -275,7 +290,7 @@ export const FAQ_ITEMS: FaqItem[] = [
   },
   {
     category: "Platforms & Co-op",
-    question: "Does TARAE support online co-op, crossplay, couch co-op, or offline play?",
+    question: "Is TARAE multiplayer? Does it support online co-op, crossplay, couch co-op, or offline play?",
     answer:
       "Steam lists single-player and online co-op. Crossplay, local couch co-op, offline mode requirements, PvP, and the maximum player limit are still unconfirmed.",
   },

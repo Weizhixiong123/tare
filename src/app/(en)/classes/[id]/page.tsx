@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   if (!seeker) return {};
   return pageMetadata(
     `/classes/${seeker.id}`,
-    `${seeker.name} (${seeker.originalName}) – TARAE Class Guide`,
+    `${seeker.name} (${seeker.originalName}) – TARAE ${seeker.seoKeyword ? `${seeker.seoKeyword} ` : ""}Class Guide`,
     `${seeker.name} (${seeker.originalName}) is a ${seeker.role.toLowerCase()} in TARAE: The Unbound. ${seeker.summary}`,
     "en",
   );

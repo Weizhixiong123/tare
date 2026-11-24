@@ -11,6 +11,7 @@ export const ja: SiteTranslations = {
     { href: "/classes", label: "クラス", description: "6人のプレイアブル「求道者（Seekers）」紹介。" },
     { href: "/world", label: "世界観・システム", description: "太鬼島、六道、五行・陰陽・業のビルド体系。" },
     { href: "/platforms", label: "対応機種", description: "Steam、PS5、Xbox 対応状況と協力プレイ。" },
+    { href: "/multiplayer", label: "マルチプレイ", description: "オンライン協力、クロスプレイ、オフライン、PvPの対応状況。" },
     { href: "/system-requirements", label: "PCスペック", description: "Steamストア上の動作環境ステータス。" },
     { href: "/faq", label: "FAQ", description: "ゲーム概要、戦闘、太鬼島に関するよくある質問。" },
   ],
@@ -56,7 +57,7 @@ export const ja: SiteTranslations = {
   },
   classes: {
     breadcrumb: "クラス",
-    metaTitle: "TARAE クラス・全6人の求道者（Seekers）ガイド",
+    metaTitle: "TARAE クラス・キャラクター：全6人の求道者（Seekers）ガイド",
     metaDescription:
       "『TARAE: The Unbound』に登場する闘鬼（Warfiend）、武士、虎狩人、風水師、くノ一、万神の役割・武器・戦闘スタイルを解説します。",
     headerLead:
@@ -116,7 +117,7 @@ export const ja: SiteTranslations = {
   },
   release: {
     breadcrumb: "発売日",
-    metaTitle: "TARAE 発売日、ベータテスト、デモ & 価格情報",
+    metaTitle: "TARAE 発売日、早期アクセス、ベータテスト、デモ & 価格情報",
     metaDescription:
       "KRAFTONのトレーラーで2027年発売予定とされた『TARAE: The Unbound』の発売日状況、試遊イベント履歴、ベータ・価格の最新ステータス。",
     statusLeadPrefix: "発売日：",
@@ -154,7 +155,7 @@ export const ja: SiteTranslations = {
   },
   platforms: {
     breadcrumb: "対応機種",
-    metaTitle: "TARAE 対応機種：Steam、PS5、Xbox、Switch & クロスプレイ状況",
+    metaTitle: "TARAE 対応機種と発売日：PS5、Xbox、PC（Steam）、Switch 2 対応状況",
     metaDescription:
       "『TARAE: The Unbound』の対応プラットフォーム（PC Steam、PS5、Xbox Series X|S）と、Switch 2・PS4・スマホ・協力プレイ・クロスプレイ・オフライン対応状況を整理。",
     headerLead:
@@ -187,9 +188,73 @@ export const ja: SiteTranslations = {
     offlineBody: "未確認。シングルプレイには対応していますが、常時オンライン接続の要否は明記されていません。",
     pvpTitle: "PvP & 協力プレイ最大人数：",
     pvpBody: "未確認。PvPモードの有無やオンライン協力の上限人数はストア未掲載です。",
+    linkMultiplayer: "マルチプレイの詳細",
     linkRelease: "発売日情報を見る",
     linkSpecs: "PC動作環境を見る",
     linkWorld: "太鬼島・ビルドシステムを見る",
+  },
+  multiplayer: {
+    breadcrumb: "マルチプレイ",
+    metaTitle: "TARAE はマルチプレイ対応？協力・クロスプレイ・オフライン・PvP",
+    metaDescription:
+      "『TARAE: The Unbound』はマルチプレイに対応？Steamではオンライン協力とシングルプレイを確認済み。クロスプレイ、クロスセーブ、ローカル協力、オフライン、PvP、最大人数の状況をまとめています。",
+    headerLead:
+      "はい、『TARAE: The Unbound』はオンライン協力プレイに対応しています。Steamにはシングルプレイとオンライン協力が記載されており、その他のマルチプレイ情報は下記で確定・未発表に分けて整理しています。",
+    checkedLabel: "ストアページ確認日",
+    summaryTitle: "マルチプレイ機能一覧",
+    statusLabels: { yes: "対応", no: "いいえ", unconfirmed: "未発表" },
+    items: [
+      {
+        question: "TARAE はマルチプレイできますか？",
+        status: "yes",
+        answer: "はい。公式Steamストアに「オンライン協力」タグがあり、他のプレイヤーとオンラインで一緒に遊べます。シングルプレイも記載されています。",
+      },
+      {
+        question: "ソロ（シングルプレイ）でも遊べますか？",
+        status: "yes",
+        answer: "はい。Steamにはオンライン協力と並んでシングルプレイが記載されており、ビルド要素もソロと協力の両方を想定して紹介されています。",
+      },
+      {
+        question: "PC・PS5・Xbox間のクロスプレイはありますか？",
+        status: "unconfirmed",
+        answer: "未発表です。BoundaryとKRAFTONは、PC、PlayStation 5、Xbox Series X|S間のクロスプレイについて発表していません。",
+      },
+      {
+        question: "クロスセーブ（進行状況の共有）はできますか？",
+        status: "unconfirmed",
+        answer: "未発表です。プラットフォーム間のセーブデータや進行状況の共有は発表されていません。",
+      },
+      {
+        question: "ローカル協力（画面分割）はありますか？",
+        status: "unconfirmed",
+        answer: "未発表です。Steamにはシングルプレイとオンライン協力のみが記載され、ローカル協力や画面分割は記載されていません。",
+      },
+      {
+        question: "オフラインで遊べますか？",
+        status: "unconfirmed",
+        answer: "未発表です。シングルプレイには対応していますが、常時オンライン接続が必要かどうかは明らかにされていません。",
+      },
+      {
+        question: "PvPはありますか？",
+        status: "unconfirmed",
+        answer: "未発表です。SteamストアやKRAFTONの発表にPvPモードの記載はありません。",
+      },
+      {
+        question: "協力プレイは最大何人ですか？",
+        status: "unconfirmed",
+        answer: "未発表です。最大パーティ人数はまだ公開されていません。",
+      },
+      {
+        question: "MMORPGですか？",
+        status: "no",
+        answer: "いいえ。『TARAE: The Unbound』はシングルプレイとオンライン協力に対応したトップダウン型アクションRPGで、常時接続型ワールドのMMORPGではありません。",
+      },
+    ],
+    relatedTitle: "関連ガイド",
+    linkPlatforms: "対応機種と発売状況",
+    linkRelease: "発売日を確認",
+    linkClasses: "6人の求道者を見る",
+    linkFaq: "FAQ一覧",
   },
   specs: {
     breadcrumb: "PCスペック",
@@ -443,6 +508,18 @@ export const ja: SiteTranslations = {
       categoryLabel: "概要・発売情報",
       question: "開発エンジンは何を使っていますか？",
       answer: "BoundaryおよびKRAFTONは、SteamやPlayStationストアページ上で使用ゲームエンジンを公式公表していません。",
+    },
+    {
+      categoryKey: "general",
+      categoryLabel: "概要・発売情報",
+      question: "早期アクセス、ベータテスト、プレイテストはありますか？",
+      answer: "まだ発表されていません。最終確認時点で、Steamには早期アクセスの予定、オープンベータ、Steamプレイテストの登録はありません。2026年の試遊ビルドはGamescomとG-STARの会場限定でした。",
+    },
+    {
+      categoryKey: "general",
+      categoryLabel: "概要・発売情報",
+      question: "開発会社はどこですか？韓国のゲームですか？",
+      answer: "『TARAE: The Unbound』はBoundaryが開発し、『PUBG: BATTLEGROUNDS』で知られる韓国企業KRAFTON, Inc.がパブリッシングを担当します。朝鮮時代の虎狩りや巫俗など韓国の歴史・民俗を色濃く取り入れており、釜山のG-STAR 2026でも試遊出展されました。",
     },
     {
       categoryKey: "gameplay",

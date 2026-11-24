@@ -10,7 +10,8 @@ export const zh: SiteTranslations = {
     { href: "/release-date", label: "发售日", description: "2027 发售窗口、价格与线下试玩状态。" },
     { href: "/classes", label: "六大职业", description: "六位可玩求道者（Seekers）定位与机制。" },
     { href: "/world", label: "世界观与系统", description: "太鬼岛、六道轮回、五行、阴阳与业力系统。" },
-    { href: "/platforms", label: "平台与联机", description: "Steam、PS5、Xbox 支持及联机状态。" },
+    { href: "/platforms", label: "平台", description: "Steam、PS5、Xbox 支持及联机状态。" },
+    { href: "/multiplayer", label: "多人联机", description: "在线合作、跨平台联机、离线与 PvP 支持状态。" },
     { href: "/system-requirements", label: "PC 配置", description: "Steam 商店官方配置要求公布状态。" },
     { href: "/faq", label: "常见问答", description: "玩法、职业、联机与太鬼岛设定汇总。" },
   ],
@@ -116,7 +117,7 @@ export const zh: SiteTranslations = {
   },
   release: {
     breadcrumb: "发售日",
-    metaTitle: "TARAE 发售日期、测试试玩（Demo/Beta）与定价状态",
+    metaTitle: "TARAE 发售日期、抢先体验、测试试玩（Demo/Beta）与定价状态",
     metaDescription:
       "KRAFTON 官方预告片标注 2027 年发售。追踪《TARAE: The Unbound》发售日期、线下试玩记录、Beta 测试与买断/免费状态。",
     statusLeadPrefix: "发售日期：",
@@ -149,8 +150,8 @@ export const zh: SiteTranslations = {
     trailerCaption: "片尾标注 2027 年发售窗口的官方预告片",
   },
   platforms: {
-    breadcrumb: "平台与联机",
-    metaTitle: "TARAE 平台指南：Steam、PS5、Xbox、Switch 与跨平台联机状态",
+    breadcrumb: "平台",
+    metaTitle: "TARAE 平台与发售日：PS5、Xbox、PC（Steam）与 Switch 2 状态",
     metaDescription:
       "确认《TARAE: The Unbound》登陆平台（PC Steam、PS5、Xbox Series X|S），并核查 Switch 2、PS4、手机端、在线合作、跨平台与离线模式状态。",
     headerLead: "KRAFTON 已公布《TARAE: The Unbound》登陆 PC、PlayStation 5 与 Xbox Series X|S。各平台具体上线节奏及跨平台联机细节仍有待公布。",
@@ -182,9 +183,73 @@ export const zh: SiteTranslations = {
     offlineBody: "待确认。支持单人模式，但未说明单人游玩是否需要全程联网。",
     pvpTitle: "PvP 与合作人数上限：",
     pvpBody: "待确认。商店页暂未公布 PvP 玩法或联机队伍最大人数。",
+    linkMultiplayer: "多人联机完整说明",
     linkRelease: "查看发售日追踪",
     linkSpecs: "查看 PC 配置状态",
     linkWorld: "了解太鬼岛世界观与系统",
+  },
+  multiplayer: {
+    breadcrumb: "多人联机",
+    metaTitle: "TARAE 支持多人联机吗？在线合作、跨平台、离线与 PvP 状态",
+    metaDescription:
+      "《TARAE: The Unbound》支持多人联机吗？Steam 已确认在线合作与单人模式。本页整理跨平台联机、跨平台存档、本地合作、离线游玩、PvP 与组队人数的官方状态。",
+    headerLead:
+      "支持。《TARAE: The Unbound》支持在线合作，Steam 商店标注了单人与在线合作；其余多人细节按「已确认 / 未确认」整理如下。",
+    checkedLabel: "商店页面核查日期",
+    summaryTitle: "多人功能一览",
+    statusLabels: { yes: "支持", no: "否", unconfirmed: "未确认" },
+    items: [
+      {
+        question: "TARAE 支持多人联机吗？",
+        status: "yes",
+        answer: "支持。官方 Steam 商店页标有「在线合作」标签，可以和其他玩家在线组队。商店同时标注了单人模式。",
+      },
+      {
+        question: "可以单人游玩吗？",
+        status: "yes",
+        answer: "可以。Steam 同时标注了单人与在线合作，构筑系统也被介绍为兼顾单人与合作玩法。",
+      },
+      {
+        question: "PC、PS5、Xbox 之间支持跨平台联机吗？",
+        status: "unconfirmed",
+        answer: "未确认。Boundary 与 KRAFTON 尚未宣布 PC、PlayStation 5 与 Xbox Series X|S 之间的跨平台联机。",
+      },
+      {
+        question: "支持跨平台存档（进度互通）吗？",
+        status: "unconfirmed",
+        answer: "未确认。官方尚未宣布跨平台存档或进度互通。",
+      },
+      {
+        question: "支持本地合作（分屏）吗？",
+        status: "unconfirmed",
+        answer: "未确认。Steam 只标注了单人与在线合作，没有本地合作或分屏标签。",
+      },
+      {
+        question: "可以离线玩吗？",
+        status: "unconfirmed",
+        answer: "未确认。游戏支持单人模式，但商店页面没有说明是否需要全程联网。",
+      },
+      {
+        question: "有 PvP 吗？",
+        status: "unconfirmed",
+        answer: "未确认。Steam 商店与 KRAFTON 公告均未提及 PvP 模式。",
+      },
+      {
+        question: "合作模式最多几人？",
+        status: "unconfirmed",
+        answer: "未确认。最大组队人数尚未公布。",
+      },
+      {
+        question: "TARAE 是 MMORPG 吗？",
+        status: "no",
+        answer: "不是。《TARAE: The Unbound》是支持单人与在线合作的俯视角动作 RPG，并非持久世界的 MMORPG。",
+      },
+    ],
+    relatedTitle: "相关指南",
+    linkPlatforms: "平台与发售状态",
+    linkRelease: "查看发售日",
+    linkClasses: "查看六位求道者",
+    linkFaq: "全部问答",
   },
   specs: {
     breadcrumb: "PC 配置",
@@ -427,6 +492,18 @@ export const zh: SiteTranslations = {
       categoryLabel: "综合与发售",
       question: "游戏使用的是什么引擎？",
       answer: "Boundary 与 KRAFTON 尚未在 Steam 或 PlayStation 商店页公开具体开发引擎。",
+    },
+    {
+      categoryKey: "general",
+      categoryLabel: "综合与发售",
+      question: "会有抢先体验、Beta 测试或 Playtest 吗？",
+      answer: "尚未公布。截至本站最近一次核查，Steam 上没有抢先体验计划、公开测试或 Steam Playtest 报名。2026 年的试玩版本仅在 Gamescom 与 G-STAR 现场开放。",
+    },
+    {
+      categoryKey: "general",
+      categoryLabel: "综合与发售",
+      question: "TARAE 是哪家公司开发的？是韩国游戏吗？",
+      answer: "《TARAE: The Unbound》由 Boundary 开发、KRAFTON, Inc. 发行；KRAFTON 是推出《PUBG: 绝地求生》的韩国公司。游戏大量取材于韩国历史与民俗，例如朝鲜时代的捉虎甲士与巫俗万神，并在釜山 G-STAR 2026 上展出。",
     },
     {
       categoryKey: "gameplay",

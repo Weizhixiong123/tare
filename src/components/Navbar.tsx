@@ -67,7 +67,7 @@ export default function Navbar({ locale = "en" }: { locale?: Locale }) {
           <span>{t.siteName}</span>
         </Link>
 
-        <div className="flex items-center gap-2 lg:order-last">
+        <div className="flex items-center gap-2 xl:order-last">
           {/* Language Dropdown */}
           <div ref={langContainer} className="relative">
             <button
@@ -143,7 +143,7 @@ export default function Navbar({ locale = "en" }: { locale?: Locale }) {
               setMenuOpen((prev) => !prev);
               setLangOpen(false);
             }}
-            className="rounded border border-amber-500/30 p-2 text-amber-200 lg:hidden"
+            className="rounded border border-amber-500/30 p-2 text-amber-200 xl:hidden"
           >
             {menuOpen ? <X aria-hidden="true" size={20} /> : <Menu aria-hidden="true" size={20} />}
           </button>
@@ -154,7 +154,7 @@ export default function Navbar({ locale = "en" }: { locale?: Locale }) {
           aria-label="Main navigation"
           className={`${
             menuOpen ? "flex" : "hidden"
-          } absolute inset-x-0 top-full flex-col gap-1 border-b border-amber-500/20 bg-obsidian-950 px-4 py-3 lg:static lg:flex lg:flex-row lg:items-center lg:gap-1 lg:border-0 lg:p-0`}
+          } absolute inset-x-0 top-full flex-col gap-1 border-b border-amber-500/20 bg-obsidian-950 px-4 py-3 xl:static xl:flex xl:flex-row xl:items-center xl:gap-1 xl:border-0 xl:p-0`}
         >
           {t.nav.map(({ href, label }) => {
             const targetHref = localePath(locale, href);

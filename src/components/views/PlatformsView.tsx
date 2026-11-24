@@ -85,6 +85,9 @@ export default function PlatformsView({ locale }: { locale: Locale }) {
           </li>
         </ul>
         <div className="mt-5 flex flex-wrap gap-5 border-t border-amber-500/20 pt-4 text-sm">
+          <Link href={localePath(locale, "/multiplayer")} className="font-semibold text-amber-200 underline">
+            {t.platforms.linkMultiplayer}
+          </Link>
           <Link href={localePath(locale, "/release-date")} className="font-semibold text-amber-200 underline">
             {t.platforms.linkRelease}
           </Link>

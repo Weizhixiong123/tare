@@ -16,6 +16,16 @@ export interface LocalizedSeeker {
   overview: string;
   combatFocus: readonly string[];
   playstyleNote: string;
+  /** Extra search term for the class page title, e.g. "Ninja" for Kunoichi. */
+  seoKeyword?: string;
+}
+
+export type MultiplayerStatus = "yes" | "no" | "unconfirmed";
+
+export interface LocalizedMultiplayerItem {
+  question: string;
+  status: MultiplayerStatus;
+  answer: string;
 }
 
 export interface LocalizedWorldSystem {
@@ -193,9 +203,25 @@ export interface SiteTranslations {
     offlineBody: string;
     pvpTitle: string;
     pvpBody: string;
+    linkMultiplayer: string;
     linkRelease: string;
     linkSpecs: string;
     linkWorld: string;
+  };
+  multiplayer: {
+    breadcrumb: string;
+    metaTitle: string;
+    metaDescription: string;
+    headerLead: string;
+    checkedLabel: string;
+    summaryTitle: string;
+    statusLabels: Record<MultiplayerStatus, string>;
+    items: readonly LocalizedMultiplayerItem[];
+    relatedTitle: string;
+    linkPlatforms: string;
+    linkRelease: string;
+    linkClasses: string;
+    linkFaq: string;
   };
   specs: {
     breadcrumb: string;

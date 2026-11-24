@@ -11,6 +11,7 @@ export const ko: SiteTranslations = {
     { href: "/classes", label: "클래스", description: "6인의 플레이어블 구도자(Seekers) 소개." },
     { href: "/world", label: "세계관 & 시스템", description: "태귀도, 육도, 오행·음양·업보 빌드 시스템." },
     { href: "/platforms", label: "플랫폼", description: "Steam, PS5, Xbox 지원 및 온라인 협동 정보." },
+    { href: "/multiplayer", label: "멀티플레이", description: "온라인 협동, 크로스플레이, 오프라인, PvP 지원 여부." },
     { href: "/system-requirements", label: "PC 사양", description: "Steam 기준 최소 및 권장 사양 현황." },
     { href: "/faq", label: "FAQ", description: "게임, 전투, 태귀도 관련 자주 묻는 질문." },
   ],
@@ -24,7 +25,7 @@ export const ko: SiteTranslations = {
   },
   breadcrumbsHome: "홈",
   home: {
-    metaTitle: "타래: 디 언바운드 (TARAE: The Unbound) 위키",
+    metaTitle: "타래 언바운드 (TARAE: The Unbound) 위키 – 출시일·클래스·플랫폼",
     metaDescription:
       "《타래: 디 언바운드》 독립 커뮤니티 위키. 6인의 구도자 클래스, 태귀도 세계관, 2027 출시 예정 정보, 플랫폼 및 PC 사양, 공식 트레일러를 확인하세요.",
     heroLead: "육도의 경계가 무너져 태어난 섬 ‘태귀도’를 배경으로 한 동양 다크 판타지 탑다운 액션 RPG.",
@@ -56,7 +57,7 @@ export const ko: SiteTranslations = {
   },
   classes: {
     breadcrumb: "클래스",
-    metaTitle: "타래 클래스 및 6인의 구도자 가이드",
+    metaTitle: "타래 클래스 & 캐릭터: 6인의 구도자 전체 가이드",
     metaDescription:
       "《타래: 디 언바운드》의 6가지 플레이어블 클래스 투귀, 무사, 착호갑사, 풍수사, 쿠노이치, 만신의 특징과 전투 스타일을 확인하세요.",
     headerLead:
@@ -116,7 +117,7 @@ export const ko: SiteTranslations = {
   },
   release: {
     breadcrumb: "출시일",
-    metaTitle: "타래 출시일, 베타 테스트, 데모 및 가격 정보",
+    metaTitle: "타래 언바운드 출시일, 얼리 액세스, 베타, 데모 및 가격 정보",
     metaDescription:
       "KRAFTON 트레일러 기준 2027년 출시 예정인 《타래: 디 언바운드》의 최신 출시일 현황, 오프라인 시연 타임라인 및 가격/F2P 미정 안내.",
     statusLeadPrefix: "출시일:",
@@ -154,7 +155,7 @@ export const ko: SiteTranslations = {
   },
   platforms: {
     breadcrumb: "플랫폼",
-    metaTitle: "타래 지원 플랫폼: Steam, PS5, Xbox, Switch & 크로스플레이",
+    metaTitle: "타래 플랫폼 & 출시일: PS5, Xbox, PC(Steam), 스위치 2 지원 여부",
     metaDescription:
       "《타래: 디 언바운드》 확정 플랫폼(PC Steam, PS5, Xbox Series X|S)과 스위치2/PS4/모바일, 온라인 협동, 크로스플레이, 오프라인 지원 여부를 확인하세요.",
     headerLead:
@@ -187,9 +188,73 @@ export const ko: SiteTranslations = {
     offlineBody: "미정. 싱글 플레이는 지원하나 상시 인터넷 연결 필수 여부는 명시되지 않았습니다.",
     pvpTitle: "PvP & 최대 협동 인원:",
     pvpBody: "미정. PvP 모드 유무와 파티 최대 인원 수는 아직 상점에 등록되지 않았습니다.",
+    linkMultiplayer: "멀티플레이 전체 정리",
     linkRelease: "출시일 정보 확인",
     linkSpecs: "PC 사양 확인",
     linkWorld: "태귀도 & 빌드 시스템 보기",
+  },
+  multiplayer: {
+    breadcrumb: "멀티플레이",
+    metaTitle: "타래 멀티플레이 지원? 협동·크로스플레이·오프라인·PvP 정리",
+    metaDescription:
+      "《타래: 디 언바운드》는 멀티플레이를 지원할까요? Steam 기준 온라인 협동과 싱글플레이가 확인되었습니다. 크로스플레이, 크로스 세이브, 로컬 협동, 오프라인, PvP, 파티 인원 현황을 정리했습니다.",
+    headerLead:
+      "네, 《타래: 디 언바운드》는 온라인 협동 플레이를 지원합니다. Steam에는 싱글플레이와 온라인 협동이 표기되어 있으며, 그 밖의 멀티플레이 정보는 아래에서 확정 여부별로 정리합니다.",
+    checkedLabel: "상점 페이지 확인일",
+    summaryTitle: "멀티플레이 기능 한눈에 보기",
+    statusLabels: { yes: "지원", no: "아니요", unconfirmed: "미확정" },
+    items: [
+      {
+        question: "타래는 멀티플레이를 지원하나요?",
+        status: "yes",
+        answer: "네. 공식 Steam 상점 페이지에 ‘온라인 협동’ 태그가 있어 다른 플레이어와 온라인으로 함께 플레이할 수 있습니다. 싱글플레이도 함께 표기되어 있습니다.",
+      },
+      {
+        question: "혼자서(싱글플레이)도 할 수 있나요?",
+        status: "yes",
+        answer: "네. Steam에 싱글플레이가 온라인 협동과 함께 표기되어 있으며, 빌드 시스템도 솔로와 협동 플레이 모두에 맞춰 소개되었습니다.",
+      },
+      {
+        question: "PC·PS5·Xbox 간 크로스플레이를 지원하나요?",
+        status: "unconfirmed",
+        answer: "미확정입니다. Boundary와 KRAFTON은 PC, PlayStation 5, Xbox Series X|S 간 크로스플레이 지원 여부를 발표하지 않았습니다.",
+      },
+      {
+        question: "크로스 세이브(진행 상황 연동)가 되나요?",
+        status: "unconfirmed",
+        answer: "미확정입니다. 플랫폼 간 세이브 또는 진행 상황 연동은 발표되지 않았습니다.",
+      },
+      {
+        question: "로컬 협동(화면 분할)을 지원하나요?",
+        status: "unconfirmed",
+        answer: "미확정입니다. Steam에는 싱글플레이와 온라인 협동만 표기되어 있으며, 로컬 협동이나 화면 분할은 표기되어 있지 않습니다.",
+      },
+      {
+        question: "오프라인으로 플레이할 수 있나요?",
+        status: "unconfirmed",
+        answer: "미확정입니다. 싱글플레이는 지원하지만 상시 온라인 접속이 필요한지는 공식적으로 밝혀지지 않았습니다.",
+      },
+      {
+        question: "PvP가 있나요?",
+        status: "unconfirmed",
+        answer: "미확정입니다. Steam 상점이나 KRAFTON 발표에 PvP 모드는 언급되지 않았습니다.",
+      },
+      {
+        question: "협동은 최대 몇 명까지 가능한가요?",
+        status: "unconfirmed",
+        answer: "미확정입니다. 최대 파티 인원은 아직 공개되지 않았습니다.",
+      },
+      {
+        question: "MMORPG인가요?",
+        status: "no",
+        answer: "아니요. 《타래: 디 언바운드》는 싱글플레이와 온라인 협동을 지원하는 탑다운 액션 RPG이며, 지속형 월드의 MMORPG가 아닙니다.",
+      },
+    ],
+    relatedTitle: "관련 가이드",
+    linkPlatforms: "지원 플랫폼 및 출시 현황",
+    linkRelease: "출시일 확인",
+    linkClasses: "6인의 구도자 보기",
+    linkFaq: "전체 FAQ 보기",
   },
   specs: {
     breadcrumb: "PC 사양",
@@ -447,6 +512,18 @@ export const ko: SiteTranslations = {
       categoryLabel: "기본 정보 & 출시",
       question: "어떤 게임 엔진을 사용하나요?",
       answer: "Boundary와 KRAFTON은 Steam이나 PlayStation 상점 페이지에 사용 엔진을 공식 표기하지 않았습니다.",
+    },
+    {
+      categoryKey: "general",
+      categoryLabel: "기본 정보 & 출시",
+      question: "얼리 액세스, 베타 테스트, 플레이테스트가 있나요?",
+      answer: "아직 발표되지 않았습니다. 마지막 확인 시점 기준 Steam에는 얼리 액세스 일정, 오픈 베타, Steam 플레이테스트 신청이 등록되어 있지 않습니다. 2026년 시연 빌드는 Gamescom과 G-STAR 현장에서만 플레이할 수 있었습니다.",
+    },
+    {
+      categoryKey: "general",
+      categoryLabel: "기본 정보 & 출시",
+      question: "타래 게임사(개발사)는 어디인가요? 한국 게임인가요?",
+      answer: "《타래: 디 언바운드》는 Boundary가 개발하고, 《배틀그라운드》로 알려진 한국 기업 KRAFTON, Inc.가 퍼블리싱합니다. 조선 시대 착호갑사와 만신 등 한국의 역사와 민속을 적극적으로 담았으며, 부산 G-STAR 2026에서도 시연되었습니다.",
     },
     {
       categoryKey: "gameplay",
